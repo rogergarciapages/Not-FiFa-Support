@@ -35,15 +35,3 @@ A prototype landing page cloning FIFA's support section, built with modern web t
 
 ``npm run build``
 
-## 📝 Project Structure
-
-
-``├── public/
-│ ├── sponsors/ # Sponsor logos
-│ ├── bg.jpg # Background image
-│ └── ... # Other static assets
-├── src/
-│ ├── layouts/ # Layout components
-│ ├── pages/ # Page components
-│ └── ... # Other source files
-└── package.json``
