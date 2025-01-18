@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Support">
@@ -18,80 +19,26 @@ import Layout from "../layouts/Layout.astro";
 
       <!-- Cards Stack -->
       <div class="flex flex-col gap-8">
-        <!-- Remote Support Card -->
-        <div class="relative group overflow-hidden rounded-lg h-[210px]">
-          <img
-            src="/typing-laptop.jpg"
-            alt="Remote Support"
-            class="absolute inset-0 w-full h-full object-cover"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-primary to-transparent"
-          >
-            <div class="relative h-full p-8 flex flex-col">
-              <h2 class="text-2xl font-bold text-white mb-4">REMOTE SUPPORT</h2>
-              <p class="text-white mb-4">
-                Click below to receive remote support.
-              </p>
-              <a
-                href="#"
-                class="text-white underline hover:text-secondary mt-auto"
-              >
-                remote support
-              </a>
-            </div>
-          </div>
-        </div>
+        <Card
+          title="REMOTE SUPPORT"
+          description="Click below to receive remote support."
+          linkText="remote support"
+          image="/typing-laptop.jpg"
+        />
 
-        <!-- Incidence Online Card -->
-        <div class="relative group overflow-hidden rounded-lg h-[210px]">
-          <img
-            src="/woman-phone.jpg"
-            alt="Incidence Online"
-            class="absolute inset-0 w-full h-full object-cover"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-primary to-transparent"
-          >
-            <div class="relative h-full p-8 flex flex-col">
-              <h2 class="text-2xl font-bold text-white mb-4">
-                INCIDENCE ONLINE
-              </h2>
-              <p class="text-white mb-4">
-                To create a new online ticket, click here.
-              </p>
-              <a
-                href="#"
-                class="text-white underline hover:text-secondary mt-auto"
-              >
-                click here
-              </a>
-            </div>
-          </div>
-        </div>
+        <Card
+          title="INCIDENCE ONLINE"
+          description="To create a new online ticket, click here."
+          linkText="click here"
+          image="/woman-phone.jpg"
+        />
 
-        <!-- Contact Card -->
-        <div class="relative group overflow-hidden rounded-lg h-[210px]">
-          <img
-            src="/people-meeting.jpg"
-            alt="Contact"
-            class="absolute inset-0 w-full h-full object-cover"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-primary to-transparent"
-          >
-            <div class="relative h-full p-8 flex flex-col">
-              <h2 class="text-2xl font-bold text-white mb-4">CONTACT</h2>
-              <p class="text-white mb-4">To contact us, click here.</p>
-              <a
-                href="#"
-                class="text-white underline hover:text-secondary mt-auto"
-              >
-                click here
-              </a>
-            </div>
-          </div>
-        </div>
+        <Card
+          title="CONTACT"
+          description="To contact us, click here."
+          linkText="click here"
+          image="/people-meeting.jpg"
+        />
       </div>
     </div>
   </main>

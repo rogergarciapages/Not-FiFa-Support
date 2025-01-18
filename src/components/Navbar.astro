@@ -1,0 +1,60 @@
+---
+interface Props {
+  logo: string;
+}
+
+const { logo } = Astro.props;
+---
+
+<script>
+  const header = document.querySelector("header");
+  const langLinks = document.querySelectorAll(".lang-link");
+
+  if (header) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        header.classList.add("bg-primary");
+        header.classList.remove("bg-transparent");
+        langLinks.forEach((link) => {
+          link.classList.remove("text-primary");
+          link.classList.add("text-white");
+        });
+      } else {
+        header.classList.remove("bg-primary");
+        header.classList.add("bg-transparent");
+        langLinks.forEach((link) => {
+          link.classList.add("text-primary");
+          link.classList.remove("text-white");
+        });
+      }
+    });
+  }
+</script>
+
+<header
+  class="fixed w-full top-0 z-50 transition-colors duration-300 bg-transparent"
+>
+  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <div class="logo">
+      <img src={logo} alt="FIFA" class="h-8 w-auto" />
+    </div>
+    <div class="language-selector">
+      <a
+        href="#"
+        class="lang-link text-primary hover:text-secondary px-2 transition-colors duration-300"
+        >en</a
+      >
+      <a
+        href="#"
+        class="lang-link text-primary hover:text-secondary px-2 transition-colors duration-300"
+        >fr</a
+      >
+      <a
+        href="#"
+        class="lang-link text-primary hover:text-secondary px-2 transition-colors duration-300"
+        >es</a
+      >
+    </div>
+  </div>
+</header>
+

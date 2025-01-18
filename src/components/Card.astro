@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  linkText: string;
+  image: string;
+}
+
+const { title, description, linkText, image } = Astro.props;
+---
+
+<div class="relative group overflow-hidden rounded-lg h-[210px]">
+  <img
+    src={image}
+    alt={title}
+    class="absolute inset-0 w-full h-full object-cover"
+  />
+  <div class="absolute inset-0 bg-gradient-to-r from-primary to-transparent">
+    <div class="relative h-full p-8 flex flex-col">
+      <h2 class="text-2xl font-bold text-white mb-4">{title}</h2>
+      <p class="text-white mb-4">{description}</p>
+      <a href="#" class="text-white underline hover:text-secondary mt-auto">
+        {linkText}
+      </a>
+    </div>
+  </div>
+</div>
+
