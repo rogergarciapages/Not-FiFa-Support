@@ -3,16 +3,16 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Support">
-  <main class="min-h-screen lg:grid lg:grid-cols-2">
-    <!-- Left Column - Background Image -->
+  <main class="lg:grid lg:grid-cols-2">
+    <!-- Left Column - Fixed Background Image -->
     <div
-      class="hidden lg:block bg-cover bg-center"
+      class="hidden lg:block bg-cover bg-center bg-fixed absolute top-0 left-0 w-1/2 h-screen -z-10"
       style="background-image: url('/bg.jpg')"
     >
     </div>
 
     <!-- Right Column - Content -->
-    <div class="bg-white min-h-screen px-4 py-16 lg:px-12">
+    <div class="lg:col-start-2 bg-white px-4 py-16 lg:px-12">
       <!-- Title -->
       <h1 class="text-7xl font-bold text-dark mb-16">Support</h1>
 
@@ -96,3 +96,9 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </main>
 </Layout>
+
+<style>
+  main {
+    min-height: calc(100vh - 384px); /* Subtract footer height */
+  }
+</style>
