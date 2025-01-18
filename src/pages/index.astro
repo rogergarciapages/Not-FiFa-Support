@@ -1,0 +1,98 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Support">
+  <main class="min-h-screen lg:grid lg:grid-cols-2">
+    <!-- Left Column - Background Image -->
+    <div
+      class="hidden lg:block bg-cover bg-center"
+      style="background-image: url('/bg.jpg')"
+    >
+    </div>
+
+    <!-- Right Column - Content -->
+    <div class="bg-white min-h-screen px-4 py-16 lg:px-12">
+      <!-- Title -->
+      <h1 class="text-5xl font-bold text-dark mb-16">Support</h1>
+
+      <!-- Cards Stack -->
+      <div class="flex flex-col gap-8">
+        <!-- Remote Support Card -->
+        <div class="relative group overflow-hidden rounded-lg h-[280px]">
+          <img
+            src="/typing-laptop.jpg"
+            alt="Remote Support"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-primary to-transparent"
+          >
+            <div class="relative h-full p-8 flex flex-col">
+              <h2 class="text-2xl font-bold text-white mb-4">REMOTE SUPPORT</h2>
+              <p class="text-white mb-4">
+                Click below to receive remote support.
+              </p>
+              <a
+                href="#"
+                class="text-white underline hover:text-secondary mt-auto"
+              >
+                remote support
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Incidence Online Card -->
+        <div class="relative group overflow-hidden rounded-lg h-[280px]">
+          <img
+            src="/woman-phone.jpg"
+            alt="Incidence Online"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-primary to-transparent"
+          >
+            <div class="relative h-full p-8 flex flex-col">
+              <h2 class="text-2xl font-bold text-white mb-4">
+                INCIDENCE ONLINE
+              </h2>
+              <p class="text-white mb-4">
+                To create a new online ticket, click here.
+              </p>
+              <a
+                href="#"
+                class="text-white underline hover:text-secondary mt-auto"
+              >
+                click here
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Card -->
+        <div class="relative group overflow-hidden rounded-lg h-[280px]">
+          <img
+            src="/people-meeting.jpg"
+            alt="Contact"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-primary to-transparent"
+          >
+            <div class="relative h-full p-8 flex flex-col">
+              <h2 class="text-2xl font-bold text-white mb-4">CONTACT</h2>
+              <p class="text-white mb-4">To contact us, click here.</p>
+              <a
+                href="#"
+                class="text-white underline hover:text-secondary mt-auto"
+              >
+                click here
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
