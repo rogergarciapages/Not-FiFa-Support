@@ -25,20 +25,20 @@ A prototype landing page cloning FIFA's support section, built with modern web t
 
 2. Install dependencies:
 
-npm install
+``npm install``
 
 3. Start development server:
-bash
-npm run dev
+
+``npm run dev``
 
 4. Build for production:
-bash
-npm run build
+
+``npm run build``
 
 ## 📝 Project Structure
 
-/
-├── public/
+
+``├── public/
 │ ├── sponsors/ # Sponsor logos
 │ ├── bg.jpg # Background image
 │ └── ... # Other static assets
@@ -46,4 +46,4 @@ npm run build
 │ ├── layouts/ # Layout components
 │ ├── pages/ # Page components
 │ └── ... # Other source files
-└── package.json
+└── package.json``
