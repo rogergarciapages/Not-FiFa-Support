@@ -1,6 +1,6 @@
 # FIFA Support Page Clone
 
-A prototype landing page cloning FIFA's support section, built with modern web technologies.
+A prototype landing page FIFA's IT support, built with modern web technologies.
 
 ## 🚀 Tech Stack
 
@@ -21,7 +21,7 @@ A prototype landing page cloning FIFA's support section, built with modern web t
 
 1. Clone the repository:
 
-``git clone [your-repo-url]``
+``git clone https://github.com/rogergarciapages/Not-FiFa-Support.git``
 
 2. Install dependencies:
 
@@ -34,4 +34,3 @@ A prototype landing page cloning FIFA's support section, built with modern web t
 4. Build for production:
 
 ``npm run build``
-
