@@ -1,4 +1,4 @@
-# FIFA Support Page Clone
+# FIFA IT Support Page Clone
 
 A prototype landing page FIFA's IT support, built with modern web technologies.
 
