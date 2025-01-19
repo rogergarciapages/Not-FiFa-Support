@@ -15,7 +15,7 @@ A prototype landing page FIFA's IT support, built with modern web technologies.
 - Gradient overlays on card images
 - Mobile-first design approach
 - FIFA-style footer with social media links
-- Multi-language support (es/pt/en)
+- Multi-language support (es/fr/en)
 
 ## 🛠️ Development
 
