@@ -35,4 +35,5 @@ A prototype landing page FIFA's IT support, built with modern web technologies.
 
 ``npm run build``
 
-![image](https://github.com/user-attachments/assets/882d9778-346e-4ed3-9ca5-30a841aedb26)
+![image](https://github.com/user-attachments/assets/06be4f84-78cb-4595-9d11-ec30b1302e5b)
+
